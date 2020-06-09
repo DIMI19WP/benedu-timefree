@@ -9,4 +9,4 @@ const repeater = async () => {
   }
 }
 
-chrome.storage.sync.get(() => setInterval(() => !err && repeater(), 10 * 60 * 1000))
+setInterval(() => !err && repeater(), 10 * 60 * 1000)
