@@ -1,0 +1,22 @@
+  {
+    "manifest_version": 2,
+    "name": "자유로운베네듀",
+    "description": ".",
+    "version": "1.0.0",
+    "browser_action": {
+      "default_popup": "./index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://benedu.co.kr/*"
+        ],
+        "js": [
+          "background.js"
+        ]
+      }
+    ],
+    "permissions": [
+      "https://*/*"
+    ]
+  }
