@@ -1,0 +1,1 @@
+chrome.tabs.query({ "currentWindow": true }, (tab) => document.write((/benedu\.co\.kr/).test(tab.filter(e => e.active)[0].url) ? '타임프리가 작동중입니다' : '타임프리가 작동중이지 않습니다.'))
