@@ -1,8 +1,8 @@
   {
     "manifest_version": 2,
     "name": "타임프리",
-    "description": ".",
-    "version": "1.0.0",
+    "description": "베네듀 시간 관련한 유틸리티입니다. 최소풀이시간 준수, 로그아웃타이머 자동연장.",
+    "version": "2.0.0",
     "browser_action": {
       "default_popup": "./index.html",
       "default_icon": "./icons/16.png"
@@ -15,6 +15,15 @@
         "js": [
           "background.js"
         ]
+      },
+      {
+        "matches": [
+          "*://benedu.co.kr/StudentStudy/TakeTest*"
+        ],
+        "js": [
+          "wayfortime.js"
+        ],
+        "run_at": "document_end"
       }
     ],
     "permissions": [
